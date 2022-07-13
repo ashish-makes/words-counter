@@ -1,0 +1,291 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body{
+    background: #f8f8ff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+h1 {
+    position: fixed;
+    left: 12rem;
+    top: 2rem;
+}
+
+.word-counter{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 20px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.words{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.count-words{
+    position:fixed;
+    top: 85%;
+    left: 6%;
+    font-size: 1rem;
+    background-image: linear-gradient(to right top, #0031ff, #244aff, #3c5eff, #5171ff, #6683ff);
+    border: none;
+    color: #fff;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 25px;
+}
+.count-words:hover{
+    box-shadow:0 5px 15px 0 rgba(0,0,0,.05);
+}
+.count-words:active{
+    transform: translateY(2px)
+}
+
+/* .count{
+    position:fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    height: 4rem;
+    width: 40rem;
+    border-color: #5474fc;
+    border-radius: 20px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.word-count-text{
+    margin-top: 20px;
+    margin-left: 10rem;
+    font-size: 1.2rem;
+}
+
+.final-count{
+    margin-top: 20px;
+    margin-left: 10rem;
+    font-size: 1.2rem;
+} */
+
+.totalWords{
+    position: fixed;
+    bottom: 8%;
+    right: 10%;
+}
+
+.totalChar{
+    position: fixed;
+    bottom: 8%;
+    right: 35%;
+}
+
+@media (max-width: 660px) {
+    .word-counter{
+        background-color: #ffffff;
+        width: 35rem;
+        height: 38rem;
+        top: 50%;
+    }
+    .word-counter h1 {
+        left: 30%;
+    }
+    .words{
+        width: 30rem;
+        height: 25rem;
+    }
+    .count-words{
+        top: 87%;
+    }
+    .totalWords{
+        right: 8%;
+    }
+    
+    .totalChar{
+        right: 32%;
+    }
+}
+
+@media (max-width: 570px) {
+    .word-counter{
+        background-color: #ffffff;
+        width: 30rem;
+        bottom: 10%;
+    }
+    .word-counter h1 {
+        left: 26%;
+    }
+    .words{
+        width: 25rem;
+        height: 25rem;
+    }
+    .count-words{
+        top: 85%;
+        left: 30%;
+    }
+    .totalWords{
+        bottom: 2%;
+        right: 15%;
+    }
+    .totalChar{
+        bottom: 2%;
+        left: 12%;
+    }
+}
+
+@media (max-width: 500px) {
+    .word-counter{
+        background-color: #ffffff;
+        height: 32rem;
+        width: 25rem;
+        bottom: 10%;
+    }
+    .word-counter h1 {
+        left: 23%;
+    }
+    .words{
+        width: 20rem;
+        height: 20rem;
+    }
+    .count-words{
+        top: 84%;
+        left: 30%;
+    }
+    .totalWords{
+        bottom: 2%;
+        right: 12%;
+    }
+    .totalChar{
+        bottom: 2%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 420px) {
+    .word-counter{
+        background-color: #ffffff;
+        height: 32rem;
+        width: 22rem;
+        bottom: 10%;
+    }
+    .word-counter h1 {
+        left: 25%;
+        font-size: 1.5rem;
+    }
+    .words{
+        top: 48%;
+        width: 18rem;
+        height: 20rem;
+    }
+    .count-words{
+        top: 82%;
+        left: 30%;
+    }
+    .totalWords{
+        bottom: 4%;
+        right: 12%;
+        font-size: 0.8rem;
+    }
+    .totalChar{
+        bottom: 4%;
+        left: 8%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .word-counter{
+        background-color: #ffffff;
+        height: 34rem;
+        width: 19rem;
+        bottom: 10%;
+    }
+    .word-counter h1 {
+        left: 22%;
+        font-size: 1.5rem;
+    }
+    .words{
+        top: 48%;
+        width: 16rem;
+        height: 20rem;
+    }
+    .count-words{
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 0.6rem;
+        top: 80%;
+        left: 30%;
+    }
+    .totalWords{
+        bottom: 6.5%;
+        left: 10%;
+        font-size: 1rem;
+    }
+    .totalChar{
+        bottom: 2%;
+        left: 10%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .word-counter{
+        background-color: #ffffff;
+        height: 32rem;
+        width: 16rem;
+        bottom: 10%;
+    }
+    .word-counter h1 {
+        left: 20%;
+        font-size: 1.3rem;
+    }
+    .words{
+        top: 48%;
+        width: 13rem;
+        height: 20rem;
+    }
+    .count-words{
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 0.6rem;
+        top: 80%;
+        left: 25%;
+    }
+    .totalWords{
+        bottom: 7.5%;
+        left: 10%;
+        font-size: 0.8rem;
+    }
+    .totalChar{
+        bottom: 0.5%;
+        left: 10%;
+        font-size: 0.8rem;
+    }
+}
